@@ -7,7 +7,7 @@ class HtButton extends HtField{
 	protected $label;
 
 	function __construct($name, $label=null){		
-		$this->label = $label ?: $name;
+		$this->label = $label ?: ucfirst($name);
 		parent::__construct($name);
 		$this->inline(false);
 	}
@@ -27,7 +27,7 @@ class HtButton extends HtField{
 	}
 
 	function render(){
-		$this->attrs(['value'=>1]);
+		$this->attrs(['value'=>$this->id()]);
 		echo "<button {$this->attrs}>{$this->label}</button>";
 	}
 

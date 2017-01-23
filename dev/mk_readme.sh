@@ -1,2 +1,2 @@
-textract tests/HtFieldTest.php > README.mdx
-mdx README.mdx tests/MyField.php tests/HtFieldTest.php > README.md
+textract tests/HtButtonTest.php > README.mdx
+mdx README.mdx tests/HtButtonTest.php > README.md
